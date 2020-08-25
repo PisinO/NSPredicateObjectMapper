@@ -1,0 +1,22 @@
+{
+  "name": "NSPredicateObjectMapper",
+  "version": "0.1.0",
+  "summary": "A short description of NSPredicateObjectMapper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Ondřej Pišín/NSPredicateObjectMapper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ondřej Pišín": "ondrej.pisin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Ondřej Pišín/NSPredicateObjectMapper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NSPredicateObjectMapper/Classes/**/*"
+}

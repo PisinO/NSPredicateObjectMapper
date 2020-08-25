@@ -1,0 +1,6 @@
+framework module NSPredicateObjectMapper {
+  umbrella header "NSPredicateObjectMapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

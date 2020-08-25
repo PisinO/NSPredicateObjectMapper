@@ -1,0 +1,16 @@
+PODS:
+  - NSPredicateObjectMapper (0.1.0)
+
+DEPENDENCIES:
+  - NSPredicateObjectMapper (from `../`)
+
+EXTERNAL SOURCES:
+  NSPredicateObjectMapper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NSPredicateObjectMapper: b1f3b2c25102a52a5d3488bd94c74747cfd1b4a4
+
+PODFILE CHECKSUM: a0f8e5f817d04b7af480d7eca726767008bb364d
+
+COCOAPODS: 1.9.1
