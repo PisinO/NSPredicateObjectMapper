@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A913BDB87B08CAB6C6BEDA22177D0B4 /* Pods-NSPredicateObjectMapper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BF670F655C165458E63F3673574F4C /* Pods-NSPredicateObjectMapper_Tests-dummy.m */; };
-		18CA1217706E0943B4139FFFD91A7062 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D6A7CD28ED4E31C6D046AF44FE215 /* ReplaceMe.swift */; };
 		1B6CB4084E9ADDCB3101AB1F4D6D9F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		203D40DFDF46B6BA0CC62DEC4A248B96 /* Pods-NSPredicateObjectMapper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E88A078F7F65303F104EEB0D88170 /* Pods-NSPredicateObjectMapper_Example-dummy.m */; };
 		3C8EF513D001C5FA252D4A4AD7F48953 /* Pods-NSPredicateObjectMapper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5CB7C83F8A3D2441B1B08A92CBB31C /* Pods-NSPredicateObjectMapper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +15,22 @@
 		6FA6D700877EDF7C0F750E1749A1ABA1 /* Pods-NSPredicateObjectMapper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6CC88C0F10E0E68E6F295094C3CF8B1 /* Pods-NSPredicateObjectMapper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AC1F4ADC4EC3D7E4ED8913FD74B6BD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		954719ADECE2C72AD923DE251367FC0C /* NSPredicateObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 993284D27AA3C7436908BCE659946F42 /* NSPredicateObjectMapper-dummy.m */; };
+		DD7FCB8D24F57D35001A6C88 /* POMArrayProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB7D24F57D34001A6C88 /* POMArrayProperty.swift */; };
+		DD7FCB8E24F57D35001A6C88 /* POMTableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB7E24F57D34001A6C88 /* POMTableProtocol.swift */; };
+		DD7FCB8F24F57D35001A6C88 /* POMStringProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB7F24F57D34001A6C88 /* POMStringProperty.swift */; };
+		DD7FCB9024F57D35001A6C88 /* POMContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8024F57D34001A6C88 /* POMContext.swift */; };
+		DD7FCB9124F57D35001A6C88 /* POMNumericProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8124F57D34001A6C88 /* POMNumericProperty.swift */; };
+		DD7FCB9224F57D35001A6C88 /* POMValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8224F57D34001A6C88 /* POMValidationError.swift */; };
+		DD7FCB9324F57D35001A6C88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8324F57D34001A6C88 /* Extensions.swift */; };
+		DD7FCB9424F57D35001A6C88 /* POMValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8424F57D34001A6C88 /* POMValue.swift */; };
+		DD7FCB9524F57D35001A6C88 /* POMTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8524F57D34001A6C88 /* POMTable.swift */; };
+		DD7FCB9624F57D35001A6C88 /* POMOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8624F57D34001A6C88 /* POMOperator.swift */; };
+		DD7FCB9724F57D35001A6C88 /* POMValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8724F57D35001A6C88 /* POMValidator.swift */; };
+		DD7FCB9824F57D35001A6C88 /* POMProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8824F57D35001A6C88 /* POMProperty.swift */; };
+		DD7FCB9924F57D35001A6C88 /* POMObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8924F57D35001A6C88 /* POMObject.swift */; };
+		DD7FCB9A24F57D35001A6C88 /* POMObjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8A24F57D35001A6C88 /* POMObjectDescriptor.swift */; };
+		DD7FCB9B24F57D35001A6C88 /* POMGenericProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB8B24F57D35001A6C88 /* POMGenericProperty.swift */; };
+		DD7FCB9C24F57D35001A6C88 /* POM.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7FCB8C24F57D35001A6C88 /* POM.h */; };
 		E17766709B2B09276BB059D4DFBC78F4 /* NSPredicateObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDB1E65588EC6BACA2F55942FB86C16 /* NSPredicateObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -42,32 +57,47 @@
 		16F8B69C5C8FA5758FC7B9F2EDC73277 /* Pods-NSPredicateObjectMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSPredicateObjectMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1EFF718C647782E556127308D0B51A25 /* Pods-NSPredicateObjectMapper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSPredicateObjectMapper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1FDB1E65588EC6BACA2F55942FB86C16 /* NSPredicateObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSPredicateObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		284588B6176F60F598C38E5F3EB361A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		284588B6176F60F598C38E5F3EB361A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		387F2B5F6F83B28DD817317800FA960F /* Pods-NSPredicateObjectMapper_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSPredicateObjectMapper_Example-Info.plist"; sourceTree = "<group>"; };
 		389C5DEB638C9D980B08BC2E228DA0B6 /* NSPredicateObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NSPredicateObjectMapper.modulemap; sourceTree = "<group>"; };
 		50B7DB36D0710255A6E88F41EC0AD652 /* Pods-NSPredicateObjectMapper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NSPredicateObjectMapper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5133D329491495A1888FD48DAC4D09A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5133D329491495A1888FD48DAC4D09A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		57EC67ABB319D888F21FF44CA2D017F6 /* Pods-NSPredicateObjectMapper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSPredicateObjectMapper_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5F10AC7DF39DCB564CF02AA1DBE84964 /* Pods-NSPredicateObjectMapper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSPredicateObjectMapper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6D5CB7C83F8A3D2441B1B08A92CBB31C /* Pods-NSPredicateObjectMapper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSPredicateObjectMapper_Example-umbrella.h"; sourceTree = "<group>"; };
 		75420B9D1CD402C164203EE29723B2F0 /* Pods-NSPredicateObjectMapper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NSPredicateObjectMapper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		774D0A033EC62E3297AD7E2BFBD22A9E /* NSPredicateObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NSPredicateObjectMapper-Info.plist"; sourceTree = "<group>"; };
-		7B42AFFB4B597E12A25013AD2A54FAE9 /* NSPredicateObjectMapper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NSPredicateObjectMapper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7B42AFFB4B597E12A25013AD2A54FAE9 /* NSPredicateObjectMapper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NSPredicateObjectMapper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		85EBD44454F7E6201B17E47F3649718F /* Pods-NSPredicateObjectMapper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NSPredicateObjectMapper_Example.modulemap"; sourceTree = "<group>"; };
-		89C712AC7E1D70CF69B9C65AAB17E7C1 /* NSPredicateObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSPredicateObjectMapper.framework; path = NSPredicateObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C712AC7E1D70CF69B9C65AAB17E7C1 /* NSPredicateObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSPredicateObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9016B593BF32E7399D979815CF62E6A7 /* Pods-NSPredicateObjectMapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSPredicateObjectMapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9861D1A3005F3EF50D6F2DAC2B89FAF5 /* NSPredicateObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSPredicateObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
 		993284D27AA3C7436908BCE659946F42 /* NSPredicateObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSPredicateObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1EC2D40B7FBE029116932FA59B9B82 /* Pods-NSPredicateObjectMapper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NSPredicateObjectMapper_Tests.modulemap"; sourceTree = "<group>"; };
 		A3BF670F655C165458E63F3673574F4C /* Pods-NSPredicateObjectMapper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NSPredicateObjectMapper_Tests-dummy.m"; sourceTree = "<group>"; };
 		C6CC88C0F10E0E68E6F295094C3CF8B1 /* Pods-NSPredicateObjectMapper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSPredicateObjectMapper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CC4418A9AE99834DE1C4AD048610339E /* Pods_NSPredicateObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NSPredicateObjectMapper_Tests.framework; path = "Pods-NSPredicateObjectMapper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4418A9AE99834DE1C4AD048610339E /* Pods_NSPredicateObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSPredicateObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126E43E3274D24109384927789E5AD6 /* Pods-NSPredicateObjectMapper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSPredicateObjectMapper_Tests-Info.plist"; sourceTree = "<group>"; };
-		D12D6A7CD28ED4E31C6D046AF44FE215 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NSPredicateObjectMapper/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		D36E88A078F7F65303F104EEB0D88170 /* Pods-NSPredicateObjectMapper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NSPredicateObjectMapper_Example-dummy.m"; sourceTree = "<group>"; };
-		D7B3D5162FDCDDA4A760C556D8B23381 /* Pods_NSPredicateObjectMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NSPredicateObjectMapper_Example.framework; path = "Pods-NSPredicateObjectMapper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B3D5162FDCDDA4A760C556D8B23381 /* Pods_NSPredicateObjectMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSPredicateObjectMapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7FCB7D24F57D34001A6C88 /* POMArrayProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMArrayProperty.swift; path = NSPredicateObjectMapper/Classes/POMArrayProperty.swift; sourceTree = "<group>"; };
+		DD7FCB7E24F57D34001A6C88 /* POMTableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMTableProtocol.swift; path = NSPredicateObjectMapper/Classes/POMTableProtocol.swift; sourceTree = "<group>"; };
+		DD7FCB7F24F57D34001A6C88 /* POMStringProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMStringProperty.swift; path = NSPredicateObjectMapper/Classes/POMStringProperty.swift; sourceTree = "<group>"; };
+		DD7FCB8024F57D34001A6C88 /* POMContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMContext.swift; path = NSPredicateObjectMapper/Classes/POMContext.swift; sourceTree = "<group>"; };
+		DD7FCB8124F57D34001A6C88 /* POMNumericProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMNumericProperty.swift; path = NSPredicateObjectMapper/Classes/POMNumericProperty.swift; sourceTree = "<group>"; };
+		DD7FCB8224F57D34001A6C88 /* POMValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMValidationError.swift; path = NSPredicateObjectMapper/Classes/POMValidationError.swift; sourceTree = "<group>"; };
+		DD7FCB8324F57D34001A6C88 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = NSPredicateObjectMapper/Classes/Extensions.swift; sourceTree = "<group>"; };
+		DD7FCB8424F57D34001A6C88 /* POMValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMValue.swift; path = NSPredicateObjectMapper/Classes/POMValue.swift; sourceTree = "<group>"; };
+		DD7FCB8524F57D34001A6C88 /* POMTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMTable.swift; path = NSPredicateObjectMapper/Classes/POMTable.swift; sourceTree = "<group>"; };
+		DD7FCB8624F57D34001A6C88 /* POMOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMOperator.swift; path = NSPredicateObjectMapper/Classes/POMOperator.swift; sourceTree = "<group>"; };
+		DD7FCB8724F57D35001A6C88 /* POMValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMValidator.swift; path = NSPredicateObjectMapper/Classes/POMValidator.swift; sourceTree = "<group>"; };
+		DD7FCB8824F57D35001A6C88 /* POMProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMProperty.swift; path = NSPredicateObjectMapper/Classes/POMProperty.swift; sourceTree = "<group>"; };
+		DD7FCB8924F57D35001A6C88 /* POMObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMObject.swift; path = NSPredicateObjectMapper/Classes/POMObject.swift; sourceTree = "<group>"; };
+		DD7FCB8A24F57D35001A6C88 /* POMObjectDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMObjectDescriptor.swift; path = NSPredicateObjectMapper/Classes/POMObjectDescriptor.swift; sourceTree = "<group>"; };
+		DD7FCB8B24F57D35001A6C88 /* POMGenericProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POMGenericProperty.swift; path = NSPredicateObjectMapper/Classes/POMGenericProperty.swift; sourceTree = "<group>"; };
+		DD7FCB8C24F57D35001A6C88 /* POM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POM.h; path = NSPredicateObjectMapper/Classes/POM.h; sourceTree = "<group>"; };
 		E829B01817C2CB4BCC9B16A5173892B9 /* Pods-NSPredicateObjectMapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSPredicateObjectMapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F5BB740333769DF8502E7DDE128BF8AA /* NSPredicateObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSPredicateObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +143,6 @@
 		1E50FCC919D4290C8EA15C69B1BBE9E7 /* NSPredicateObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				D12D6A7CD28ED4E31C6D046AF44FE215 /* ReplaceMe.swift */,
 				50BA56F319943F2C60F73C12428E2E48 /* Pod */,
 				6735799F27FB0C0CCFBE423CCA3F2B28 /* Support Files */,
 			);
@@ -141,6 +170,22 @@
 		50BA56F319943F2C60F73C12428E2E48 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				DD7FCB8C24F57D35001A6C88 /* POM.h */,
+				DD7FCB7D24F57D34001A6C88 /* POMArrayProperty.swift */,
+				DD7FCB8024F57D34001A6C88 /* POMContext.swift */,
+				DD7FCB8B24F57D35001A6C88 /* POMGenericProperty.swift */,
+				DD7FCB8124F57D34001A6C88 /* POMNumericProperty.swift */,
+				DD7FCB8924F57D35001A6C88 /* POMObject.swift */,
+				DD7FCB8A24F57D35001A6C88 /* POMObjectDescriptor.swift */,
+				DD7FCB8624F57D34001A6C88 /* POMOperator.swift */,
+				DD7FCB8824F57D35001A6C88 /* POMProperty.swift */,
+				DD7FCB7F24F57D34001A6C88 /* POMStringProperty.swift */,
+				DD7FCB8524F57D34001A6C88 /* POMTable.swift */,
+				DD7FCB7E24F57D34001A6C88 /* POMTableProtocol.swift */,
+				DD7FCB8224F57D34001A6C88 /* POMValidationError.swift */,
+				DD7FCB8724F57D35001A6C88 /* POMValidator.swift */,
+				DD7FCB8424F57D34001A6C88 /* POMValue.swift */,
+				DD7FCB8324F57D34001A6C88 /* Extensions.swift */,
 				5133D329491495A1888FD48DAC4D09A1 /* LICENSE */,
 				7B42AFFB4B597E12A25013AD2A54FAE9 /* NSPredicateObjectMapper.podspec */,
 				284588B6176F60F598C38E5F3EB361A8 /* README.md */,
@@ -239,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17766709B2B09276BB059D4DFBC78F4 /* NSPredicateObjectMapper-umbrella.h in Headers */,
+				DD7FCB9C24F57D35001A6C88 /* POM.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +363,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					50D8645D9321D893648FE220D69AD224 = {
+						LastSwiftMigration = 1160;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,8 +418,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7FCB9024F57D35001A6C88 /* POMContext.swift in Sources */,
+				DD7FCB8F24F57D35001A6C88 /* POMStringProperty.swift in Sources */,
 				954719ADECE2C72AD923DE251367FC0C /* NSPredicateObjectMapper-dummy.m in Sources */,
-				18CA1217706E0943B4139FFFD91A7062 /* ReplaceMe.swift in Sources */,
+				DD7FCB9B24F57D35001A6C88 /* POMGenericProperty.swift in Sources */,
+				DD7FCB9A24F57D35001A6C88 /* POMObjectDescriptor.swift in Sources */,
+				DD7FCB9524F57D35001A6C88 /* POMTable.swift in Sources */,
+				DD7FCB9324F57D35001A6C88 /* Extensions.swift in Sources */,
+				DD7FCB9124F57D35001A6C88 /* POMNumericProperty.swift in Sources */,
+				DD7FCB8E24F57D35001A6C88 /* POMTableProtocol.swift in Sources */,
+				DD7FCB9624F57D35001A6C88 /* POMOperator.swift in Sources */,
+				DD7FCB9224F57D35001A6C88 /* POMValidationError.swift in Sources */,
+				DD7FCB9724F57D35001A6C88 /* POMValidator.swift in Sources */,
+				DD7FCB8D24F57D35001A6C88 /* POMArrayProperty.swift in Sources */,
+				DD7FCB9824F57D35001A6C88 /* POMProperty.swift in Sources */,
+				DD7FCB9424F57D35001A6C88 /* POMValue.swift in Sources */,
+				DD7FCB9924F57D35001A6C88 /* POMObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9861D1A3005F3EF50D6F2DAC2B89FAF5 /* NSPredicateObjectMapper.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -430,6 +496,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -475,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11B6010EE30EA55B31BC61F34ADC8A75 /* NSPredicateObjectMapper.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -556,8 +624,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

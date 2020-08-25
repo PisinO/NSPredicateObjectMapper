@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Car" representedClassName="Car" syncable="YES">
+        <attribute name="accessories" optional="YES" attributeType="Transformable"/>
+        <attribute name="brand" attributeType="String"/>
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+        <attribute name="horsepower" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="link" optional="YES" attributeType="URI"/>
+        <attribute name="productionDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="transmissionRatios" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <entity name="Owner" representedClassName="Owner" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="cars" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Car"/>
+    </entity>
+    <elements>
+        <element name="Car" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="Owner" positionX="-54" positionY="-9" width="128" height="88"/>
+    </elements>
+</model>
