@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    name: Test
+    runs-on: macos-latest
+    
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=13.6,name=iPhone 11']
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Build and test
+      run: |
+        cd Example
+        xcodebuild clean test -workspace NSPredicateObjectMapper.xcworkspace -scheme NSPredicateObjectMapper-Example -destination "${destination}" -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES VALID_ARCHS=x86_64
+        bash <(curl -s https://codecov.io/bash)
+      env:
+         destination: ${{ matrix.destination }}
