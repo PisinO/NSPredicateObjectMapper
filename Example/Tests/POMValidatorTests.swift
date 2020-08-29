@@ -21,7 +21,7 @@ class POMValidatorTests: XCTestCase {
     //  --------------------------------------------------------------------
     //  MARK: POMProperty
     //  --------------------------------------------------------------------
-    func test_CDWStringPropertyValidation_stringValue_shouldBeCorrect()
+    func test_stringPropertyValidation_stringValueShouldBeCorrect()
     {
         do
         {
@@ -29,16 +29,29 @@ class POMValidatorTests: XCTestCase {
         }
         catch
         {
-            assertionFailure()
+            XCTFail()
         }
     }
     
-    func test_CDWStringPropertyValidation_intValue_shouldBeCorrect()
+    func test_stringPropertyValidation_intValueShouldBeCorrect()
     {
         do
         {
             try Car.where(\Car.brand).isEqualTo(1).context.validate()
-            assertionFailure()
+            XCTFail()
+        }
+        catch
+        {
+            
+        }
+    }
+    
+    func test_stringPredicateValidation_intValueShouldBeCorrect()
+    {
+        do
+        {
+            let _ = try Car.where(\Car.brand).isEqualTo(1).predicateWithValidation()
+            XCTFail()
         }
         catch
         {

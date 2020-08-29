@@ -8,25 +8,25 @@
 
 import Foundation
 
-class POMObjectDescriptorBase
+protocol POMObjectDescriptorProtocol
 {
+    associatedtype T
+    
     func describe<T>(value: T) -> String
-    {
-        fatalError()
-    }
 }
 
-class POMObjectDescriptor: POMObjectDescriptorBase
+class POMObjectDescriptor: POMObjectDescriptorProtocol
 {
-    func describe(value: String) -> String
-    {
+    typealias T = String
+    
+    func describe<T>(value: T) -> String {
         return "\(value)"
     }
 }
 
 class POMObjectTwoSpacesDescriptor: POMObjectDescriptor
 {
-    override func describe(value: String) -> String
+    override func describe<T>(value: T) -> String
     {
         return " \(value) "
     }
@@ -34,16 +34,16 @@ class POMObjectTwoSpacesDescriptor: POMObjectDescriptor
 
 class POMObjectRightSpaceDescriptor: POMObjectDescriptor
 {
-    override func describe(value: String) -> String
+    override func describe<T>(value: T) -> String
     {
         return "\(value) "
     }
 }
 
-class POMObjectLeftSpaceDescriptor: POMObjectDescriptor
-{
-    override func describe(value: String) -> String
-    {
-        return " \(value)"
-    }
-}
+//class POMObjectLeftSpaceDescriptor: POMObjectDescriptor
+//{
+//    override func describe(value: String) -> String
+//    {
+//        return " \(value)"
+//    }
+//}
