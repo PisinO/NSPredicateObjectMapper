@@ -1,4 +1,4 @@
-# NSPredicateObjectMapper - BETA
+# NSPredicateObjectMapper
 >Wrapper build above NSPredicate adding object access to NSManagedObjects and request chaining.
 
 ![CI Status](https://github.com/PisinO/NSPredicateObjectMapper/workflows/CI/badge.svg)
@@ -47,7 +47,7 @@ Swift >= 5.0
 
 ## Author
 
-Ondřej Pišín, ondrej.pisin@gmail.com
+Ondřej Pišín, ondrej.pisin@gmail.com
 
 ## License
 
