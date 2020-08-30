@@ -1,11 +1,4 @@
-use_frameworks!
-
-target 'NSPredicateObjectMapper_Example' do
+target 'NSPredicateObjectMapper_Tests' do
+  use_frameworks!
   pod 'NSPredicateObjectMapper', :path => '../'
-
-  target 'NSPredicateObjectMapper_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

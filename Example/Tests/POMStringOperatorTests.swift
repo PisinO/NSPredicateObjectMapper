@@ -9,7 +9,6 @@
 import XCTest
 import CoreData
 
-@testable import NSPredicateObjectMapper_Example
 @testable import NSPredicateObjectMapper
 
 class POMStringOperatorTests: XCTestCase
