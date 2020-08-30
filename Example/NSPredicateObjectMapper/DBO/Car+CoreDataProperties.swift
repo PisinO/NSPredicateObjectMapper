@@ -19,6 +19,7 @@ extension Car {
     
     @NSManaged public var brand: String
     @NSManaged public var data: Data?
+    @NSManaged public var isAvailable: Bool
     @NSManaged public var horsepower: Int32
     @NSManaged public var id: Int32
     @NSManaged public var link: URL?

@@ -163,49 +163,6 @@ public extension POMTableProtocol
     
     
     //  --------------------------------------------------------------------
-    //  MARK: Data
-    //  --------------------------------------------------------------------
-    
-    /**
-     Projects selected keypath of `NSManagedObject` property into a predicate request chain
-     
-     - Parameter prop: KeyPath to `NSManagedObject` property
-     
-     # Example #
-     ```
-     Car.where(\Car.id).isEqualTo(1).predicate()
-     ```
-     
-     - Remark:
-     Implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the final object is executed by calling `.predicate()`
-     */
-    static func `where`<Element: NSManagedObject>(_ prop: KeyPath<Element, Data>) -> POMGenericProperty<Data>
-    {
-        return self.basic(prop)
-    }
-    
-    /**
-     Projects selected keypath of `NSManagedObject` property into a predicate request chain
-     
-     - Parameter prop: KeyPath to `NSManagedObject` property
-     
-     # Example #
-     ```
-     Car.where(\Car.id).isEqualTo(1).predicate()
-     ```
-     
-     - Remark:
-     Implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the final object is executed by calling `.predicate()`
-     */
-    static func `where`<Element: NSManagedObject>(_ prop: KeyPath<Element, Data?>) -> POMGenericProperty<Data?>
-    {
-        return self.basic(prop)
-    }
-    //  --------------------------------------------------------------------
-    
-    
-    
-    //  --------------------------------------------------------------------
     //  MARK: String
     //  --------------------------------------------------------------------
     

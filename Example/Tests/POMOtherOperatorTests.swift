@@ -42,4 +42,22 @@ class POMOtherOperatorTests: XCTestCase {
         XCTAssertEqual(carsUUID.count, 1)
         XCTAssertEqual(carsUUID[0], cars[0])
     }
+    
+    func test_url() {
+        let fetchRequest = self.fetchRequest
+        fetchRequest.predicate = Car.where(\Car.brand).isEqualTo("Skoda").predicate()
+        
+        guard let cars = try? context?.fetch(fetchRequest) else { return XCTFail() }
+
+        XCTAssertEqual(cars.count, 1)
+        
+        let uuid = cars[0].uuid.uuidString
+        
+        fetchRequest.predicate = Car.where(\Car.link).isEqualTo(URL(string: "https://backend.com/api/\(uuid)")).predicate()
+        
+        guard let carsUUID = try? context?.fetch(fetchRequest) else { return XCTFail() }
+        
+        XCTAssertEqual(carsUUID.count, 1)
+        XCTAssertEqual(carsUUID[0], cars[0])
+    }
 }

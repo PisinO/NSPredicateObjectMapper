@@ -12,12 +12,12 @@ import CoreData
 /// Represents a value of right hand expression
 public final class POMValue: POMObject
 {
-    private let val: Any
+    internal private(set) var valueObject: Any
     internal let type: String
     
     init<T>(_ value: T, context: POMContext)
     {
-        self.val = value
+        self.valueObject = value
         self.type = String(describing: T.self)
         
         super.init(context: context)
@@ -25,13 +25,13 @@ public final class POMValue: POMObject
     
     override func value() -> String
     {
-        switch val {
+        switch valueObject {
             case let value as Array<Any>:
                 return descriptor.describe(value: value.query())
-            case let value as Int:
-                return descriptor.describe(value: "\(String(describing: value))")
+            case is String, is UUID, is URL, is Int, is Double, is Float:
+                return descriptor.describe(value: "%@")
             default:
-                return descriptor.describe(value: "'\(String(describing: val))'")
+                return descriptor.describe(value: "\(String(describing: value))")
         }
     }
 }
@@ -105,7 +105,7 @@ public extension POMValue
      */
     func predicate() -> NSPredicate
     {
-        return NSPredicate(format: context.description);
+        return NSPredicate(format: context.description, argumentArray: context.parameters);
     }
     
     /**

@@ -41,5 +41,23 @@ public final class POMContext
         return requestVector.map({ $0.value() }).joined()
     }
     
+    internal var parameters: [Any] {
+        var values = [Any]()
+        for value in requestVector.compactMap({ $0 as? POMValue }).map({ $0.valueObject }) {
+            switch value {
+                case let value as Int:
+                    values.append(NSNumber(value: value))
+                case let value as Float:
+                    values.append(NSNumber(value: value))
+                case let value as Double:
+                    values.append(NSNumber(value: value))
+                default:
+                    values.append(value)
+            }
+        }
+        
+        return values
+    }
+    
     internal init() { }
 }
