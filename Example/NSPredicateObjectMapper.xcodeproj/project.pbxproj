@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		98FA5473608D1F7C8EAB2908 /* Pods_NSPredicateObjectMapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E14E0B79B626546B37EA79 /* Pods_NSPredicateObjectMapper_Tests.framework */; };
+		DD7D8ABF24FA42EB0009364B /* POMNumericOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D8ABE24FA42EB0009364B /* POMNumericOperatorTests.swift */; };
+		DD7D8AC124FA4EBA0009364B /* POMOtherOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D8AC024FA4EBA0009364B /* POMOtherOperatorTests.swift */; };
 		DD7FCBA324F582FE001A6C88 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB9D24F581B7001A6C88 /* TestExtensions.swift */; };
 		DD7FCBA424F58301001A6C88 /* POMValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB9F24F581B7001A6C88 /* POMValidatorTests.swift */; };
 		DD7FCBA524F58304001A6C88 /* POMStringOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB9E24F581B7001A6C88 /* POMStringOperatorTests.swift */; };
@@ -51,6 +53,8 @@
 		B9D1CBCC943D99B6635E8FB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BFA92B0E346876701B742722 /* Pods-NSPredicateObjectMapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSPredicateObjectMapper_Example.debug.xcconfig"; path = "Target Support Files/Pods-NSPredicateObjectMapper_Example/Pods-NSPredicateObjectMapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C6E14E0B79B626546B37EA79 /* Pods_NSPredicateObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSPredicateObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7D8ABE24FA42EB0009364B /* POMNumericOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POMNumericOperatorTests.swift; sourceTree = "<group>"; };
+		DD7D8AC024FA4EBA0009364B /* POMOtherOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POMOtherOperatorTests.swift; sourceTree = "<group>"; };
 		DD7FCB9D24F581B7001A6C88 /* TestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		DD7FCB9E24F581B7001A6C88 /* POMStringOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POMStringOperatorTests.swift; sourceTree = "<group>"; };
 		DD7FCB9F24F581B7001A6C88 /* POMValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POMValidatorTests.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				DD7FCB9F24F581B7001A6C88 /* POMValidatorTests.swift */,
 				DD7FCB9D24F581B7001A6C88 /* TestExtensions.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				DD7D8ABE24FA42EB0009364B /* POMNumericOperatorTests.swift */,
+				DD7D8AC024FA4EBA0009364B /* POMOtherOperatorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -374,7 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7FCBA324F582FE001A6C88 /* TestExtensions.swift in Sources */,
+				DD7D8AC124FA4EBA0009364B /* POMOtherOperatorTests.swift in Sources */,
 				DD7FCBA424F58301001A6C88 /* POMValidatorTests.swift in Sources */,
+				DD7D8ABF24FA42EB0009364B /* POMNumericOperatorTests.swift in Sources */,
 				DD7FCBA524F58304001A6C88 /* POMStringOperatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import XCTest
 
 @testable import NSPredicateObjectMapper_Example
 @testable import NSPredicateObjectMapper
@@ -18,7 +19,7 @@ extension NSManagedObjectContext {
         // Get the model
         let model = NSManagedObjectModel.mergedModel(from: Bundle.allBundles)
         
-        assert(model != nil)
+        XCTAssertNotNil(model)
         
         // Create and configure the coordinator
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: model!)
@@ -52,12 +53,17 @@ extension NSManagedObjectContext {
             car.brand = brand
             car.id = Int32(index+1)
             car.productionDate = Date().addingTimeInterval(-(yearSeconds * Double.random(in: 0...30)))
-            car.horsepower = Int32.random(in: 60...300)
+            car.horsepower = Int32(60 + index * 10)
             car.accessories = ["ABS", "LED lights", "Roof rack"]
             car.transmissionRatios = [3.26, 2.4, 1.8]
+            car.uuid = UUID()
+            car.link = URL(string: "https://backend.com/api/\(car.uuid)")
+            car.data = car.uuid.uuidString.data(using: .utf8)
+            car.isAvailable = false
             
             if index == 0 {
                 car.accessories?.append("Spare wheel")
+                car.isAvailable = true
             }
             
             owner.addToCars(car)
@@ -69,7 +75,7 @@ extension NSManagedObjectContext {
         }
         catch let error as NSError
         {
-            print("ERROR: \(error), \(error.userInfo)")
+            XCTFail("ERROR: \(error), \(error.userInfo)")
         }
     }
     

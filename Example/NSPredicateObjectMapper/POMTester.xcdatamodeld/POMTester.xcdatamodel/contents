@@ -6,9 +6,11 @@
         <attribute name="data" optional="YES" attributeType="Binary"/>
         <attribute name="horsepower" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isAvailable" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="link" optional="YES" attributeType="URI"/>
         <attribute name="productionDate" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="transmissionRatios" optional="YES" attributeType="Transformable"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
     </entity>
     <entity name="Owner" representedClassName="Owner" syncable="YES">
         <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -16,7 +18,7 @@
         <relationship name="cars" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Car"/>
     </entity>
     <elements>
-        <element name="Car" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="Car" positionX="-63" positionY="-18" width="128" height="193"/>
         <element name="Owner" positionX="-54" positionY="-9" width="128" height="88"/>
     </elements>
 </model>
