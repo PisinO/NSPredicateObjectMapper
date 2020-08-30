@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NSPredicateObjectMapper'
-  s.version          = '1.0.0'
-  s.summary          = 'A short description of NSPredicateObjectMapper.'
+  s.version          = '1.0.1'
+  s.summary          = 'Wrapper build above NSPredicate adding object access to NSManagedObjects and request chaining.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,6 +29,7 @@ Writing magic strings of NSPredicate is not optimal, I've wanted the same experi
   s.social_media_url = 'https://twitter.com/Pisin_O'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '5.3'
 
   s.source_files = 'NSPredicateObjectMapper/Classes/**/*'
   
