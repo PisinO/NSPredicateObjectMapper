@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NSPredicateObjectMapper'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Wrapper build above NSPredicate adding object access to NSManagedObjects and request chaining.'
 
 # This description is used to generate tags and improve search results.

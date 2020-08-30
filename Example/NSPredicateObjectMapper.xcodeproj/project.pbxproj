@@ -7,44 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201E4755DD9734F0E2018B84 /* Pods_NSPredicateObjectMapper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27CDFF1C41222DE1DED31EA /* Pods_NSPredicateObjectMapper_Example.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		98FA5473608D1F7C8EAB2908 /* Pods_NSPredicateObjectMapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E14E0B79B626546B37EA79 /* Pods_NSPredicateObjectMapper_Tests.framework */; };
+		DD3258A624FBB84000630CEF /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC724F58954001A6C88 /* Owner+CoreDataProperties.swift */; };
+		DD3258A724FBB84200630CEF /* Owner+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC624F58954001A6C88 /* Owner+CoreDataClass.swift */; };
+		DD3258A824FBB84400630CEF /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC524F58954001A6C88 /* Car+CoreDataProperties.swift */; };
+		DD3258A924FBB84600630CEF /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC424F58954001A6C88 /* Car+CoreDataClass.swift */; };
+		DD3258AA24FBC4B000630CEF /* POMTester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBAE24F584BD001A6C88 /* POMTester.xcdatamodeld */; };
 		DD7D8ABF24FA42EB0009364B /* POMNumericOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D8ABE24FA42EB0009364B /* POMNumericOperatorTests.swift */; };
 		DD7D8AC124FA4EBA0009364B /* POMOtherOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D8AC024FA4EBA0009364B /* POMOtherOperatorTests.swift */; };
 		DD7FCBA324F582FE001A6C88 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB9D24F581B7001A6C88 /* TestExtensions.swift */; };
 		DD7FCBA424F58301001A6C88 /* POMValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB9F24F581B7001A6C88 /* POMValidatorTests.swift */; };
 		DD7FCBA524F58304001A6C88 /* POMStringOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCB9E24F581B7001A6C88 /* POMStringOperatorTests.swift */; };
-		DD7FCBB024F584BD001A6C88 /* POMTester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBAE24F584BD001A6C88 /* POMTester.xcdatamodeld */; };
-		DD7FCBC824F58954001A6C88 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC424F58954001A6C88 /* Car+CoreDataClass.swift */; };
-		DD7FCBC924F58954001A6C88 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC524F58954001A6C88 /* Car+CoreDataProperties.swift */; };
-		DD7FCBCA24F58954001A6C88 /* Owner+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC624F58954001A6C88 /* Owner+CoreDataClass.swift */; };
-		DD7FCBCB24F58954001A6C88 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FCBC724F58954001A6C88 /* Owner+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = NSPredicateObjectMapper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		34AED6A8883C65B2A4A0718D /* Pods-NSPredicateObjectMapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSPredicateObjectMapper_Example.release.xcconfig"; path = "Target Support Files/Pods-NSPredicateObjectMapper_Example/Pods-NSPredicateObjectMapper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* NSPredicateObjectMapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSPredicateObjectMapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* NSPredicateObjectMapper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSPredicateObjectMapper_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E7078ABC022433A174E5E25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -52,7 +28,6 @@
 		ACBA232882136C7298A28D63 /* Pods-NSPredicateObjectMapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSPredicateObjectMapper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NSPredicateObjectMapper_Tests/Pods-NSPredicateObjectMapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9D1CBCC943D99B6635E8FB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BFA92B0E346876701B742722 /* Pods-NSPredicateObjectMapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSPredicateObjectMapper_Example.debug.xcconfig"; path = "Target Support Files/Pods-NSPredicateObjectMapper_Example/Pods-NSPredicateObjectMapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C6E14E0B79B626546B37EA79 /* Pods_NSPredicateObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSPredicateObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7D8ABE24FA42EB0009364B /* POMNumericOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POMNumericOperatorTests.swift; sourceTree = "<group>"; };
 		DD7D8AC024FA4EBA0009364B /* POMOtherOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POMOtherOperatorTests.swift; sourceTree = "<group>"; };
 		DD7FCB9D24F581B7001A6C88 /* TestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
@@ -63,24 +38,14 @@
 		DD7FCBC524F58954001A6C88 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD7FCBC624F58954001A6C88 /* Owner+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DD7FCBC724F58954001A6C88 /* Owner+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E27CDFF1C41222DE1DED31EA /* Pods_NSPredicateObjectMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSPredicateObjectMapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9DA6EBBEE82DE852C100D9 /* Pods-NSPredicateObjectMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSPredicateObjectMapper_Tests.release.xcconfig"; path = "Target Support Files/Pods-NSPredicateObjectMapper_Tests/Pods-NSPredicateObjectMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				201E4755DD9734F0E2018B84 /* Pods_NSPredicateObjectMapper_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE21AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98FA5473608D1F7C8EAB2908 /* Pods_NSPredicateObjectMapper_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for NSPredicateObjectMapper */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				C7C1546AE5431B1B2D05E032 /* Pods */,
@@ -102,39 +66,16 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* NSPredicateObjectMapper_Example.app */,
 				607FACE51AFB9204008FA782 /* NSPredicateObjectMapper_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for NSPredicateObjectMapper */ = {
-			isa = PBXGroup;
-			children = (
-				DD7FCBA924F583DC001A6C88 /* DBO */,
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
-				DD7FCBAE24F584BD001A6C88 /* POMTester.xcdatamodeld */,
-			);
-			name = "Example for NSPredicateObjectMapper";
-			path = NSPredicateObjectMapper;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DD7FCBA924F583DC001A6C88 /* DBO */,
+				DD7FCBAE24F584BD001A6C88 /* POMTester.xcdatamodeld */,
 				DD7FCB9E24F581B7001A6C88 /* POMStringOperatorTests.swift */,
 				DD7FCB9F24F581B7001A6C88 /* POMValidatorTests.swift */,
 				DD7FCB9D24F581B7001A6C88 /* TestExtensions.swift */,
@@ -166,8 +107,6 @@
 		99019B1635BDC3626B09C2D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E27CDFF1C41222DE1DED31EA /* Pods_NSPredicateObjectMapper_Example.framework */,
-				C6E14E0B79B626546B37EA79 /* Pods_NSPredicateObjectMapper_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,25 +136,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* NSPredicateObjectMapper_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NSPredicateObjectMapper_Example" */;
-			buildPhases = (
-				3517625AEB9B32DCBF5F5377 /* [CP] Check Pods Manifest.lock */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				A5157083693692C966E3A1BB /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NSPredicateObjectMapper_Example;
-			productName = NSPredicateObjectMapper;
-			productReference = 607FACD01AFB9204008FA782 /* NSPredicateObjectMapper_Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		607FACE41AFB9204008FA782 /* NSPredicateObjectMapper_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NSPredicateObjectMapper_Tests" */;
@@ -228,7 +148,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = NSPredicateObjectMapper_Tests;
 			productName = Tests;
@@ -245,12 +164,9 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = T7FN3VR7W9;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -269,23 +185,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* NSPredicateObjectMapper_Example */,
 				607FACE41AFB9204008FA782 /* NSPredicateObjectMapper_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACCE1AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,46 +201,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3517625AEB9B32DCBF5F5377 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NSPredicateObjectMapper_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5157083693692C966E3A1BB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NSPredicateObjectMapper_Example/Pods-NSPredicateObjectMapper_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NSPredicateObjectMapper/NSPredicateObjectMapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSPredicateObjectMapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSPredicateObjectMapper_Example/Pods-NSPredicateObjectMapper_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C669B2665D4EEABAC209BDA0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,60 +226,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACCC1AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD7FCBC824F58954001A6C88 /* Car+CoreDataClass.swift in Sources */,
-				DD7FCBCB24F58954001A6C88 /* Owner+CoreDataProperties.swift in Sources */,
-				DD7FCBCA24F58954001A6C88 /* Owner+CoreDataClass.swift in Sources */,
-				DD7FCBC924F58954001A6C88 /* Car+CoreDataProperties.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				DD7FCBB024F584BD001A6C88 /* POMTester.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		607FACE11AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3258A824FBB84400630CEF /* Car+CoreDataProperties.swift in Sources */,
+				DD3258AA24FBC4B000630CEF /* POMTester.xcdatamodeld in Sources */,
 				DD7FCBA324F582FE001A6C88 /* TestExtensions.swift in Sources */,
 				DD7D8AC124FA4EBA0009364B /* POMOtherOperatorTests.swift in Sources */,
+				DD3258A724FBB84200630CEF /* Owner+CoreDataClass.swift in Sources */,
 				DD7FCBA424F58301001A6C88 /* POMValidatorTests.swift in Sources */,
+				DD3258A624FBB84000630CEF /* Owner+CoreDataProperties.swift in Sources */,
 				DD7D8ABF24FA42EB0009364B /* POMNumericOperatorTests.swift in Sources */,
 				DD7FCBA524F58304001A6C88 /* POMStringOperatorTests.swift in Sources */,
+				DD3258A924FBB84600630CEF /* Car+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* NSPredicateObjectMapper_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -524,45 +353,12 @@
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFA92B0E346876701B742722 /* Pods-NSPredicateObjectMapper_Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NSPredicateObjectMapper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.1;
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		607FACF11AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34AED6A8883C65B2A4A0718D /* Pods-NSPredicateObjectMapper_Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NSPredicateObjectMapper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.1;
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACBA232882136C7298A28D63 /* Pods-NSPredicateObjectMapper_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T7FN3VR7W9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,7 +373,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSPredicateObjectMapper_Example.app/NSPredicateObjectMapper_Example";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -586,6 +382,7 @@
 			baseConfigurationReference = FE9DA6EBBEE82DE852C100D9 /* Pods-NSPredicateObjectMapper_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T7FN3VR7W9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -596,7 +393,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSPredicateObjectMapper_Example.app/NSPredicateObjectMapper_Example";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
@@ -608,15 +405,6 @@
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
 				607FACEE1AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NSPredicateObjectMapper_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

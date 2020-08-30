@@ -8,7 +8,6 @@
 
 import XCTest
 
-@testable import NSPredicateObjectMapper_Example
 @testable import NSPredicateObjectMapper
 
 class POMValidatorTests: XCTestCase {

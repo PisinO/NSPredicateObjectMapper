@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 import XCTest
 
-@testable import NSPredicateObjectMapper_Example
 @testable import NSPredicateObjectMapper
 
 extension NSManagedObjectContext {
