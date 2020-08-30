@@ -28,7 +28,7 @@ public final class POMValue: POMObject
         switch valueObject {
             case let value as Array<Any>:
                 return descriptor.describe(value: value.query())
-            case is String, is UUID, is URL, is Int, is Double, is Float:
+            case is String, is UUID, is URL, is Int, is Double, is Float, is Bool:
                 return descriptor.describe(value: "%@")
             default:
                 return descriptor.describe(value: "\(String(describing: value))")

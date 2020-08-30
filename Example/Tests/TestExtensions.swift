@@ -59,6 +59,7 @@ extension NSManagedObjectContext {
             car.uuid = UUID()
             car.link = URL(string: "https://backend.com/api/\(car.uuid)")
             car.data = car.uuid.uuidString.data(using: .utf8)
+            car.isAvailable = false
             
             if index == 0 {
                 car.accessories?.append("Spare wheel")

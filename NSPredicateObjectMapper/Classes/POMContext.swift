@@ -51,6 +51,8 @@ public final class POMContext
                     values.append(NSNumber(value: value))
                 case let value as Double:
                     values.append(NSNumber(value: value))
+                case let value as Bool:
+                    values.append(NSNumber(value: value))
                 default:
                     values.append(value)
             }

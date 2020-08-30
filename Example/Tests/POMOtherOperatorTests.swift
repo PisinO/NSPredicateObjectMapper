@@ -25,6 +25,16 @@ class POMOtherOperatorTests: XCTestCase {
         context = try NSManagedObjectContext.contextForTests()
     }
     
+    func test_bool() {
+        let fetchRequest = self.fetchRequest
+        fetchRequest.predicate = Car.where(\Car.isAvailable).isEqualTo(true).predicate()
+        
+        guard let cars = try? context?.fetch(fetchRequest) else { return XCTFail() }
+
+        XCTAssertEqual(cars.count, 1)
+        XCTAssertEqual(cars[0].brand, "Honda")
+    }
+    
     func test_uuid() {
         let fetchRequest = self.fetchRequest
         fetchRequest.predicate = Car.where(\Car.brand).isEqualTo("Skoda").predicate()
